@@ -94,5 +94,13 @@
 ---
 
 <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=med-aziz-kaboudi&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="My GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=med-aziz-kaboudi&theme=radical" alt="GitHub Streak" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=med-aziz-kaboudi&layout=compact&theme=radical" alt="Top Languages" />
 </p>
