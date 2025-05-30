@@ -87,14 +87,12 @@
 ### 📫 Get in Touch
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohamedaziz.kaboudi@esprit.tn)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/med-aziz-kaboudi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/med-aziz-kaboudi/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamed-aziz-kaboudi/)
 [![Phone](https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+21650082878)
 
 ---
 
-### 🎮 Play a Game While You Scroll
+### 🎮 GitHub Snake Game
 <p align="center">
-  <a href="https://games.construct.net/3146/latest" target="_blank">
-    <img src="https://img.shields.io/badge/Play%20Action%20Game-Play%20Now-red?style=for-the-badge&logo=google-play" alt="Play Game" />
-  </a>
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </p>
