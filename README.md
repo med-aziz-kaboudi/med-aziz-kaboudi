@@ -64,7 +64,6 @@
 ![VS Code](https://img.shields.io/badge/VS_Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Android Studio](https://img.shields.io/badge/Android_Studio-%233DDC84.svg?style=for-the-badge&logo=androidstudio&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-%23000000.svg?style=for-the-badge&logo=xcode&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-%23000000.svg?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAA...)
 
 #### 🎨 Design & Office Tools
 ![Photoshop](https://img.shields.io/badge/Photoshop-%2300C8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
@@ -93,14 +92,9 @@
 
 ---
 
+### 🎮 Play a Game While You Scroll
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=med-aziz-kaboudi&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="My GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=med-aziz-kaboudi&theme=radical" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=med-aziz-kaboudi&layout=compact&theme=radical" alt="Top Languages" />
+  <a href="https://games.construct.net/3146/latest" target="_blank">
+    <img src="https://img.shields.io/badge/Play%20Action%20Game-Play%20Now-red?style=for-the-badge&logo=google-play" alt="Play Game" />
+  </a>
 </p>
