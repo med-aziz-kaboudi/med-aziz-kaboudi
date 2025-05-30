@@ -1,9 +1,13 @@
 <h1 align="center">👋 Hi, I'm Mohamed Aziz Kaboudi</h1>
-<h3 align="center">Computer Engineer | Mobile Development Specialist | Future Tech Leader</h3>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Computer%20Engineer;Mobile%20Development%20Specialist;Future%20Tech%20Leader;AI%20&%20Software%20Enthusiast&center=true&width=500&height=50&color=0E75B6&size=24" alt="Typing SVG" />
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=med-aziz-kaboudi&label=Profile%20views&color=0e75b6&style=flat-square" alt="Profile Views" />
 </p>
+
 
 ---
 
