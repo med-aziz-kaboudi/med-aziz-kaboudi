@@ -15,7 +15,7 @@
 ---
 
 ### 🚀 About Me
-🛠️ 4th Year Engineering Student at **ESPRIT, Tunisia**  
+🛠️ 5th Year Engineering Student at **ESPRIT, Tunisia**  
 💻 Specialized in **Mobile Application Development** and **Full-Stack Engineering**  
 📚 Passionate about cutting-edge technologies and building scalable solutions  
 🌍 Multilingual: Fluent in **Arabic**, **French**, and **English**  
