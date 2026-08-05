@@ -39,20 +39,22 @@ Arabic, French, English.
   <p>Personal finance, done properly. Track money between people with reminders, proof photos, PDF statements and shared ledgers.</p>
   <p>
     <a href="https://apps.apple.com/app/id6759562603"><img src="https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="App Store" /></a>
-    <a href="https://www.owemie.com"><img src="https://img.shields.io/badge/owemie.com-2E9E5B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+    <a href="https://play.google.com/store/apps/details?id=com.owemie.owemie"><img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white" alt="Google Play" /></a>
   </p>
+  <p><a href="https://www.owemie.com"><img src="https://img.shields.io/badge/owemie.com-2E9E5B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a></p>
 </td>
 <td align="center" width="50%">
   <a href="https://omrum.space">
     <img src="assets/omrum-logo.png" width="110" alt="Ömrüm" />
   </a>
   <h3>Ömrüm</h3>
-  <p><strong>Live on the App Store</strong></p>
+  <p><strong>Live on iOS &amp; Android</strong></p>
   <p>A private app for two. No signup, just a pairing code. Live presence on the lock screen, shared drawing, calls.</p>
   <p>
     <a href="https://apps.apple.com/app/id6778920520"><img src="https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="App Store" /></a>
-    <a href="https://omrum.space"><img src="https://img.shields.io/badge/omrum.space-8E5BD0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+    <a href="https://play.google.com/store/apps/details?id=com.omrum.omrum"><img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=googleplay&logoColor=white" alt="Google Play" /></a>
   </p>
+  <p><a href="https://omrum.space"><img src="https://img.shields.io/badge/omrum.space-8E5BD0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a></p>
 </td>
 </tr>
 </table>
