@@ -25,7 +25,7 @@
     0,
     0,
     0,
-    2,
+    0,
     0,
     0,
     0
@@ -34,7 +34,7 @@
     0,
     0,
     0,
-    2,
+    0,
     0,
     0,
     0
@@ -43,7 +43,7 @@
     0,
     0,
     0,
-    1,
+    0,
     0,
     0,
     0
@@ -51,128 +51,56 @@
    [
     0,
     0,
-    1,
-    1,
-    2,
+    0,
+    0,
+    0,
     0,
     0
    ]
   ],
-  "moves": 6,
-  "players": [
-   "med-aziz-kaboudi"
-  ],
-  "lastMove": [
-   {
-    "r": 5,
-    "c": 2
-   },
-   {
-    "r": 2,
-    "c": 3
-   }
-  ],
+  "moves": 0,
+  "players": [],
+  "lastMove": [],
   "games": []
  },
  "ttt": {
   "game": 1,
   "board": [
-   1,
    0,
    0,
    0,
-   1,
    0,
-   2,
    0,
-   2
+   0,
+   0,
+   0,
+   0
   ],
-  "players": [
-   "med-aziz-kaboudi"
-  ],
-  "last": [
-   0,
-   8
-  ],
+  "players": [],
+  "last": [],
   "lastGame": null
  },
  "rps": {
-  "rounds": 4,
+  "rounds": 0,
   "throws": {
-   "rock": 2,
-   "paper": 1,
-   "scissors": 1
+   "rock": 0,
+   "paper": 0,
+   "scissors": 0
   },
   "results": {
-   "human": 1,
-   "bot": 3,
+   "human": 0,
+   "bot": 0,
    "draw": 0
   },
-  "last": {
-   "login": "med-aziz-kaboudi",
-   "you": "rock",
-   "bot": "paper",
-   "result": "bot",
-   "at": "2026-10-11T13:34:22.603Z"
-  }
+  "last": null
  },
- "players": {
-  "med-aziz-kaboudi": {
-   "played": 9,
-   "won": 1,
-   "lost": 3,
-   "draw": 0,
-   "first": "2026-10-11T13:03:33.662Z",
-   "last": "2026-10-11T13:34:33.784Z"
-  }
- },
+ "players": {},
  "totals": {
-  "moves": 9,
-  "games": 4,
-  "human": 1,
-  "bot": 3,
+  "moves": 0,
+  "games": 0,
+  "human": 0,
+  "bot": 0,
   "draw": 0
  },
- "feed": [
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "ttt",
-   "at": "2026-10-11T13:34:33.784Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "rps",
-   "at": "2026-10-11T13:34:22.603Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "connect4",
-   "at": "2026-10-11T13:34:16.257Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "rps",
-   "at": "2026-10-11T13:34:14.472Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "rps",
-   "at": "2026-10-11T13:34:11.568Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "rps",
-   "at": "2026-10-11T13:31:40.407Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "connect4",
-   "at": "2026-10-11T13:31:27.079Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "ttt",
-   "at": "2026-10-11T13:29:11.775Z"
-  }
- ]
+ "feed": []
 }

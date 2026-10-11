@@ -22,7 +22,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Hel
 </g>
 <g clip-path="url(#frame)">
   <rect x="0" y="40" width="50" height="308" fill="#ffffff"/>
-  <g><circle cx="25" cy="315" r="20" fill="#ffc93c"/><circle cx="25" cy="315" r="13" fill="none" stroke="#000" stroke-opacity=".15" stroke-width="2.5"/></g>
+  
   <rect x="0" y="40" width="50" height="308" fill="url(#bd)" mask="url(#holes)"/>
 </g>
 

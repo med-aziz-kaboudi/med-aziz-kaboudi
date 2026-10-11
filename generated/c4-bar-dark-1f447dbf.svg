@@ -7,7 +7,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Hel
 </style>
 
 <text x="300" y="32" text-anchor="middle" font-size="24" font-weight="800" letter-spacing="-.4" fill="#f0f4fa">Connect Four</text>
-<text x="300" y="58" text-anchor="middle" font-size="14" fill="#8b949e">Game 1 · 6 discs down · click a column to move</text>
+<text x="300" y="58" text-anchor="middle" font-size="14" fill="#8b949e">Fresh board. Click any column to drop the first disc.</text>
 <g transform="translate(300 86)" font-size="12" class="mono" fill="#6e7681"><circle cx="-86" cy="-4" r="6" fill="#ff4d6d"/><text x="-74" y="0">YOU</text><circle cx="6" cy="-4" r="6" fill="#ffc93c"/><text x="18" y="0">MY BOT</text></g>
 
 </svg>
