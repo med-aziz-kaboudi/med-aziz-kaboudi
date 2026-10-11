@@ -19,10 +19,10 @@ jobs:
     if: startsWith(github.event.issue.title, 'connect4|')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
 
       # Issue fields arrive as env vars only, never inside the script text,
       # so a crafted title cannot run anything. play.mjs validates it again.

@@ -6,7 +6,7 @@
   <a href="https://mohamedazizkaboudi.tn"><img src="https://img.shields.io/badge/Portfolio-0E75B6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/mohamed-aziz-kaboudi/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:azizkaboudi123@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://komarev.com/ghpvc/?username=med-aziz-kaboudi&label=PROFILE+VIEWS&color=2f81f7&style=for-the-badge&abbreviated=true" alt="Profile views">
+  <img src="https://api.visitorbadge.io/api/visitors?path=med-aziz-kaboudi-profile&countColor=%232f81f7&style=for-the-badge&labelStyle=upper" alt="Profile views">
 </p>
 
 <p align="center">I build products end to end, from the first design frame to the store release, and increasingly the AI that runs inside them.</p>

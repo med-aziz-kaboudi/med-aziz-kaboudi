@@ -69,7 +69,9 @@ const issue = (c) =>
     `Press **Create** to drop your disc into column ${c}.\n\nThe bot answers within a minute and the board on the profile updates by itself. You can close this tab.`
   )}`
 
-const views = 'https://komarev.com/ghpvc/?username=med-aziz-kaboudi&label=PROFILE+VIEWS&color=2f81f7&style=for-the-badge&abbreviated=true'
+// komarev.com refuses GitHub's image proxy (404 through camo), so the
+// counter moved to visitorbadge.io, which serves it.
+const views = 'https://api.visitorbadge.io/api/visitors?path=med-aziz-kaboudi-profile&countColor=%232f81f7&style=for-the-badge&labelStyle=upper'
 const badge = (label, color, logo, href) =>
   `<a href="${href}"><img src="https://img.shields.io/badge/${encodeURIComponent(label)}-${color}?style=for-the-badge&logo=${logo}&logoColor=white" alt="${label}"></a>`
 const store = (p) =>
