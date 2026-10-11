@@ -7,7 +7,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Hel
 </style>
 
 <text x="300" y="32" text-anchor="middle" font-size="24" font-weight="800" letter-spacing="-.4" fill="#f0f4fa">Tic-Tac-Toe</text>
-<text x="300" y="58" text-anchor="middle" font-size="14" fill="#8b949e">Your move. Click an empty square.</text>
+<text x="300" y="58" text-anchor="middle" font-size="14" fill="#8b949e">Fresh board. Click any square to place your X.</text>
 <g transform="translate(300 86)" font-size="12" class="mono" fill="#6e7681"><text x="-86" y="0" fill="#79c0ff" font-weight="800">X</text><text x="-72" y="0">YOU</text><text x="6" y="0" fill="#ffc93c" font-weight="800">O</text><text x="20" y="0">MY BOT</text></g>
 
 </svg>

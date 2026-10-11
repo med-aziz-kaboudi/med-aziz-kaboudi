@@ -75,26 +75,39 @@
   "games": []
  },
  "ttt": {
-  "game": 1,
+  "game": 2,
   "board": [
-   1,
-   2,
    0,
-   2,
-   1,
-   1,
-   2,
-   1,
-   2
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
   ],
-  "players": [
-   "med-aziz-kaboudi"
-  ],
-  "last": [
-   5,
-   3
-  ],
-  "lastGame": null
+  "players": [],
+  "last": [],
+  "lastGame": {
+   "result": "draw",
+   "players": [
+    "med-aziz-kaboudi"
+   ],
+   "board": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    2
+   ],
+   "win": null,
+   "at": "2026-10-11T13:51:39.836Z"
+  }
  },
  "rps": {
   "rounds": 0,
@@ -112,22 +125,27 @@
  },
  "players": {
   "med-aziz-kaboudi": {
-   "played": 5,
+   "played": 6,
    "won": 0,
    "lost": 0,
-   "draw": 0,
+   "draw": 1,
    "first": "2026-10-11T13:48:17.434Z",
-   "last": "2026-10-11T13:50:07.013Z"
+   "last": "2026-10-11T13:51:39.836Z"
   }
  },
  "totals": {
-  "moves": 5,
-  "games": 0,
+  "moves": 6,
+  "games": 1,
   "human": 0,
   "bot": 0,
-  "draw": 0
+  "draw": 1
  },
  "feed": [
+  {
+   "login": "med-aziz-kaboudi",
+   "game": "ttt",
+   "at": "2026-10-11T13:51:39.836Z"
+  },
   {
    "login": "med-aziz-kaboudi",
    "game": "ttt",
