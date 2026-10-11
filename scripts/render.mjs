@@ -87,7 +87,10 @@ if (c4Last) save('connect4-last', (t) => S.c4Board(t, c4Last.board, { title: 'La
 
 // Tic-Tac-Toe: nine clickable squares.
 const ttt = state.ttt
-const tttStatus = ttt.board.some(Boolean) ? 'Your move. Click an empty square.' : 'Fresh board. Click any square to place your X.'
+const tttEnded = { human: 'Last game: a visitor beat the bot.', bot: 'Last game: the bot won.', draw: 'Last game was a draw, board cleared.' }
+const tttStatus = ttt.board.some(Boolean)
+  ? 'Your move. Click an empty square.'
+  : `${ttt.lastGame ? tttEnded[ttt.lastGame.result] + ' ' : ''}Click any square to start.`
 save('ttt-bar', (t) => S.gameBar(t, { title: 'Tic-Tac-Toe', status: tttStatus, legend: S.tttLegend(t) }))
 ttt.board.forEach((v, i) => save(`ttt-${i + 1}`, (t) => S.tttCell(t, v, { fresh: ttt.last.includes(i), delay: ttt.last.indexOf(i) * 0.6 })))
 save('ttt-board', (t) => S.tttBoard(t, ttt.board))
