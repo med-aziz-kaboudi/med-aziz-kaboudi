@@ -25,7 +25,7 @@
     0,
     0,
     0,
-    0,
+    2,
     0,
     0,
     0
@@ -51,24 +51,24 @@
    [
     0,
     0,
-    0,
+    1,
     1,
     2,
     0,
     0
    ]
   ],
-  "moves": 4,
+  "moves": 6,
   "players": [
    "med-aziz-kaboudi"
   ],
   "lastMove": [
    {
-    "r": 4,
-    "c": 3
+    "r": 5,
+    "c": 2
    },
    {
-    "r": 3,
+    "r": 2,
     "c": 3
    }
   ],
@@ -118,22 +118,27 @@
  },
  "players": {
   "med-aziz-kaboudi": {
-   "played": 6,
+   "played": 7,
    "won": 1,
    "lost": 2,
    "draw": 0,
    "first": "2026-10-11T13:03:33.662Z",
-   "last": "2026-10-11T13:34:14.472Z"
+   "last": "2026-10-11T13:34:16.257Z"
   }
  },
  "totals": {
-  "moves": 6,
+  "moves": 7,
   "games": 3,
   "human": 1,
   "bot": 2,
   "draw": 0
  },
  "feed": [
+  {
+   "login": "med-aziz-kaboudi",
+   "game": "connect4",
+   "at": "2026-10-11T13:34:16.257Z"
+  },
   {
    "login": "med-aziz-kaboudi",
    "game": "rps",
