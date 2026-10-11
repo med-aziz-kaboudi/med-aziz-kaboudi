@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="510" viewBox="0 0 520 510" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.drop{animation:drop .75s cubic-bezier(.45,0,.75,1.25) both}
+@keyframes drop{from{transform:translateY(var(--d))}to{transform:none}}
+.win{animation:win 1.2s ease-in-out infinite alternate}
+@keyframes win{from{stroke-opacity:.35}to{stroke-opacity:.95}}
+
+</style>
+
+<defs>
+  <linearGradient id="bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f81f7"/><stop offset="1" stop-color="#1b5fc4"/></linearGradient>
+  <mask id="holes"><rect x="36" y="92" width="448" height="384" rx="18" fill="#fff"/><circle cx="68" cy="124" r="25" fill="#000"/><circle cx="132" cy="124" r="25" fill="#000"/><circle cx="196" cy="124" r="25" fill="#000"/><circle cx="260" cy="124" r="25" fill="#000"/><circle cx="324" cy="124" r="25" fill="#000"/><circle cx="388" cy="124" r="25" fill="#000"/><circle cx="452" cy="124" r="25" fill="#000"/><circle cx="68" cy="188" r="25" fill="#000"/><circle cx="132" cy="188" r="25" fill="#000"/><circle cx="196" cy="188" r="25" fill="#000"/><circle cx="260" cy="188" r="25" fill="#000"/><circle cx="324" cy="188" r="25" fill="#000"/><circle cx="388" cy="188" r="25" fill="#000"/><circle cx="452" cy="188" r="25" fill="#000"/><circle cx="68" cy="252" r="25" fill="#000"/><circle cx="132" cy="252" r="25" fill="#000"/><circle cx="196" cy="252" r="25" fill="#000"/><circle cx="260" cy="252" r="25" fill="#000"/><circle cx="324" cy="252" r="25" fill="#000"/><circle cx="388" cy="252" r="25" fill="#000"/><circle cx="452" cy="252" r="25" fill="#000"/><circle cx="68" cy="316" r="25" fill="#000"/><circle cx="132" cy="316" r="25" fill="#000"/><circle cx="196" cy="316" r="25" fill="#000"/><circle cx="260" cy="316" r="25" fill="#000"/><circle cx="324" cy="316" r="25" fill="#000"/><circle cx="388" cy="316" r="25" fill="#000"/><circle cx="452" cy="316" r="25" fill="#000"/><circle cx="68" cy="380" r="25" fill="#000"/><circle cx="132" cy="380" r="25" fill="#000"/><circle cx="196" cy="380" r="25" fill="#000"/><circle cx="260" cy="380" r="25" fill="#000"/><circle cx="324" cy="380" r="25" fill="#000"/><circle cx="388" cy="380" r="25" fill="#000"/><circle cx="452" cy="380" r="25" fill="#000"/><circle cx="68" cy="444" r="25" fill="#000"/><circle cx="132" cy="444" r="25" fill="#000"/><circle cx="196" cy="444" r="25" fill="#000"/><circle cx="260" cy="444" r="25" fill="#000"/><circle cx="324" cy="444" r="25" fill="#000"/><circle cx="388" cy="444" r="25" fill="#000"/><circle cx="452" cy="444" r="25" fill="#000"/></mask>
+  <clipPath id="well"><rect x="36" y="0" width="448" height="476"/></clipPath>
+</defs>
+<text x="260" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2328">Connect Four vs my bot</text>
+<text x="260" y="60" text-anchor="middle" font-size="14" fill="#59636e">Fresh board. You are red, drop the first disc.</text>
+<rect x="36" y="92" width="448" height="384" rx="18" fill="#ffffff"/>
+<g clip-path="url(#well)"></g>
+<rect x="36" y="92" width="448" height="384" rx="18" fill="url(#bd)" mask="url(#holes)"/>
+
+<text x="68" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">1</text><text x="132" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">2</text><text x="196" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">3</text><text x="260" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">4</text><text x="324" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">5</text><text x="388" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">6</text><text x="452" y="500" text-anchor="middle" class="mono" font-size="13" fill="#818b98">7</text>
+
+</svg>

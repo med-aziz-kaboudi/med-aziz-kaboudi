@@ -1,0 +1,56 @@
+name: Connect Four move
+
+# A visitor opened a "connect4|drop|N" issue from the profile. Play their move,
+# let the bot answer, redraw the board, reply on the issue and close it.
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-write
+  cancel-in-progress: false
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, 'connect4|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Issue fields arrive as env vars only, never inside the script text,
+      # so a crafted title cannot run anything. play.mjs validates it again.
+      - name: Play the move
+        run: node scripts/play.mjs
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          LOGIN: ${{ github.event.issue.user.login }}
+
+      - name: Redraw
+        run: node scripts/render.mjs
+
+      - name: Commit
+        env:
+          LOGIN: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A README.md generated game/state.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Connect Four: move by @$LOGIN"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1
+
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file game/reply.md
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"
