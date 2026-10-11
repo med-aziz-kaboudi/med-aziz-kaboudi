@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.hand{animation:hand 2.4s ease-in-out 0.25s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes hand{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(6deg) translateY(-4px)}}
+
+</style>
+
+<defs><radialGradient id="g" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#0969da" stop-opacity=".2"/><stop offset="1" stop-color="#0969da" stop-opacity="0"/></radialGradient></defs>
+<rect x="4" y="4" width="142" height="142" rx="24" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="4" y="4" width="142" height="142" rx="24" fill="url(#g)"/>
+<g class="hand"><g transform="translate(47 26) scale(2.33)"><path d="M6 2.5h8.5L19 7v13.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-17a1 1 0 0 1 1-1z M14 2.5V7.5h5 M8.5 12h7 M8.5 15.5h7 M8.5 19h4" fill="none" stroke="#218bff" stroke-width="0.77" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<text x="75" y="118" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="2" fill="#1f2328">PAPER</text>
+
+</svg>

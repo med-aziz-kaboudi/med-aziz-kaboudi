@@ -50,11 +50,14 @@ export const PRODUCTS = [
 ]
 
 export const STATS = [
-  { value: '2', label: 'APPS LIVE IN STORES', color: '#4ade80' },
-  { value: '6', label: 'YEARS BUILDING', color: '#2f9fe0' },
-  { value: '50+', label: 'PROJECTS SHIPPED', color: '#b07be0' },
-  { value: '3', label: 'HACKATHON PLACES', color: '#f0879f' },
+  { value: '2', label: 'APPS LIVE IN STORES', icon: 'phone' },
+  { value: '6', label: 'YEARS BUILDING', icon: 'calendar' },
+  { value: '50+', label: 'PROJECTS SHIPPED', icon: 'rocket' },
+  { value: '3', label: 'HACKATHON PLACES', icon: 'trophy' },
 ]
+
+// Tech marks that orbit inside the hero globe (names from scripts/icons.json).
+export const GLOBE_INNER = ['Flutter', 'NestJS', 'Python', 'Swift', 'Kotlin', 'PostgreSQL', 'Google Cloud', 'Ollama', 'React', 'Docker']
 
 // Names match scripts/icons.json (Simple Icons). Anything without an icon is
 // drawn with a generic glyph, so the list can hold concepts too.
@@ -71,8 +74,8 @@ export const STACK = [
 export const STACK_LABEL = { Apple: 'SwiftUI', 'Jetpack Compose': 'Compose', 'GitHub Actions': 'CI/CD' }
 
 export const HACKATHONS = [
-  ['🥇 1st', 'Imaginary-ai', 'Story generation from image prompts'],
-  ['🥉 3rd', 'FinAssist', 'Personal finance analytics and automated reporting'],
+  ['1st', 'Imaginary-ai', 'Story generation from image prompts'],
+  ['3rd', 'FinAssist', 'Personal finance analytics and automated reporting'],
   ['4th', 'Cement Sales App', 'Field sales operations and vendor mapping'],
   ['Participant', 'Gatra (with GIZ)', 'Water conservation platform with a voice assistant'],
   ['Participant', 'Linguify.ai', 'AI language learning with a tutor chatbot'],

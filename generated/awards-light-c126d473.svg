@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="360" viewBox="0 0 1200 360" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+.row{animation:row .7s cubic-bezier(.16,1,.3,1) both}@keyframes row{from{opacity:0}to{opacity:1}}
+</style>
+
+<text x="0" y="16" class="mono" font-size="12.5" letter-spacing="2" fill="#818b98">HACKATHONS</text>
+<text x="640" y="16" class="mono" font-size="12.5" letter-spacing="2" fill="#818b98">CERTIFICATIONS</text>
+<g class="row" style="animation-delay:0s" transform="translate(0 40)">
+  <circle cx="24" cy="22" r="22" fill="#f5c451" fill-opacity=".14" stroke="#f5c451" stroke-width="2"/>
+  <text x="24" y="27" text-anchor="middle" font-size="11.5" font-weight="800" fill="#f5c451">1ST</text>
+  <text x="62" y="18" font-size="17" font-weight="700" fill="#1f2328">Imaginary-ai</text>
+  <text x="62" y="40" font-size="13.5" fill="#59636e">Story generation from image prompts</text>
+</g>
+<g class="row" style="animation-delay:0.08s" transform="translate(0 104)">
+  <circle cx="24" cy="22" r="22" fill="#d08a4b" fill-opacity=".14" stroke="#d08a4b" stroke-width="2"/>
+  <text x="24" y="27" text-anchor="middle" font-size="11.5" font-weight="800" fill="#d08a4b">3RD</text>
+  <text x="62" y="18" font-size="17" font-weight="700" fill="#1f2328">FinAssist</text>
+  <text x="62" y="40" font-size="13.5" fill="#59636e">Personal finance analytics and automated reporting</text>
+</g>
+<g class="row" style="animation-delay:0.16s" transform="translate(0 168)">
+  <circle cx="24" cy="22" r="22" fill="#218bff" fill-opacity=".14" stroke="#218bff" stroke-width="2"/>
+  <text x="24" y="27" text-anchor="middle" font-size="11.5" font-weight="800" fill="#218bff">4TH</text>
+  <text x="62" y="18" font-size="17" font-weight="700" fill="#1f2328">Cement Sales App</text>
+  <text x="62" y="40" font-size="13.5" fill="#59636e">Field sales operations and vendor mapping</text>
+</g>
+<g class="row" style="animation-delay:0.24s" transform="translate(0 232)">
+  <circle cx="24" cy="22" r="22" fill="#818b98" fill-opacity=".14" stroke="#818b98" stroke-width="2"/>
+  <text x="24" y="27" text-anchor="middle" font-size="11.5" font-weight="800" fill="#818b98">IN</text>
+  <text x="62" y="18" font-size="17" font-weight="700" fill="#1f2328">Gatra (with GIZ)</text>
+  <text x="62" y="40" font-size="13.5" fill="#59636e">Water conservation platform with a voice assistant</text>
+</g>
+<g class="row" style="animation-delay:0.32s" transform="translate(0 296)">
+  <circle cx="24" cy="22" r="22" fill="#818b98" fill-opacity=".14" stroke="#818b98" stroke-width="2"/>
+  <text x="24" y="27" text-anchor="middle" font-size="11.5" font-weight="800" fill="#818b98">IN</text>
+  <text x="62" y="18" font-size="17" font-weight="700" fill="#1f2328">Linguify.ai</text>
+  <text x="62" y="40" font-size="13.5" fill="#59636e">AI language learning with a tutor chatbot</text>
+</g>
+<g class="row" style="animation-delay:0.3s" transform="translate(640 40)">
+  <rect x="0" y="0" width="44" height="44" rx="12" fill="#0969da" fill-opacity=".12" stroke="#0969da" stroke-opacity=".4"/>
+  <g transform="translate(10 10) scale(1)"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z M8.5 14l-1.5 8 5-3 5 3-1.5-8" fill="none" stroke="#218bff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="60" y="18" font-size="16" font-weight="700" fill="#1f2328">Generative AI with Diffusion Models</text>
+  <text x="60" y="40" class="mono" font-size="12" letter-spacing="1" fill="#59636e">NVIDIA · 2025</text>
+</g>
+<g class="row" style="animation-delay:0.38s" transform="translate(640 104)">
+  <rect x="0" y="0" width="44" height="44" rx="12" fill="#0969da" fill-opacity=".12" stroke="#0969da" stroke-opacity=".4"/>
+  <g transform="translate(10 10) scale(1)"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z M8.5 14l-1.5 8 5-3 5 3-1.5-8" fill="none" stroke="#218bff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="60" y="18" font-size="16" font-weight="700" fill="#1f2328">Applications of AI for Predictive Maintenance</text>
+  <text x="60" y="40" class="mono" font-size="12" letter-spacing="1" fill="#59636e">NVIDIA · 2025</text>
+</g>
+<g class="row" style="animation-delay:0.46s" transform="translate(640 168)">
+  <rect x="0" y="0" width="44" height="44" rx="12" fill="#0969da" fill-opacity=".12" stroke="#0969da" stroke-opacity=".4"/>
+  <g transform="translate(10 10) scale(1)"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z M8.5 14l-1.5 8 5-3 5 3-1.5-8" fill="none" stroke="#218bff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="60" y="18" font-size="16" font-weight="700" fill="#1f2328">Cloud Foundations</text>
+  <text x="60" y="40" class="mono" font-size="12" letter-spacing="1" fill="#59636e">AWS ACADEMY · 2025</text>
+</g>
+</svg>

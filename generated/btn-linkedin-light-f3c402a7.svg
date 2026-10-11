@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="50" viewBox="0 0 152 50" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.sh{animation:sh 5s ease-in-out 1s infinite}
+@keyframes sh{from{transform:translateX(-120px)}40%,100%{transform:translateX(192px)}}
+
+</style>
+
+<defs><clipPath id="b"><rect x="1" y="1" width="150" height="48" rx="14"/></clipPath>
+<linearGradient id="s" x1="0" x2="1"><stop offset="0" stop-color="#0a66c2" stop-opacity="0"/><stop offset=".5" stop-color="#0a66c2" stop-opacity=".2"/><stop offset="1" stop-color="#0a66c2" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="150" height="48" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
+<g clip-path="url(#b)"><g class="sh"><rect x="0" y="0" width="90" height="50" fill="url(#s)" transform="skewX(-15)"/></g></g>
+<rect x="18" y="13" width="24" height="24" rx="5" fill="#0a66c2"/><text x="30" y="31" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">in</text>
+<text x="52" y="31" font-size="15" font-weight="700" letter-spacing=".2" fill="#1f2328">LinkedIn</text>
+
+</svg>

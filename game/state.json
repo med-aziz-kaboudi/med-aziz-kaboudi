@@ -1,7 +1,84 @@
 {
- "game": 1,
- "board": [
-  [
+ "version": 2,
+ "connect4": {
+  "game": 1,
+  "board": [
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0
+   ]
+  ],
+  "moves": 2,
+  "players": [
+   "med-aziz-kaboudi"
+  ],
+  "lastMove": [
+   {
+    "r": 5,
+    "c": 3
+   },
+   {
+    "r": 5,
+    "c": 4
+   }
+  ],
+  "games": []
+ },
+ "ttt": {
+  "game": 1,
+  "board": [
+   0,
+   0,
    0,
    0,
    0,
@@ -10,74 +87,46 @@
    0,
    0
   ],
-  [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
-   0,
-   0,
-   0,
-   0,
-   0
-  ],
-  [
-   0,
-   0,
-   0,
-   1,
-   2,
-   0,
-   0
-  ]
- ],
- "moves": 2,
- "players": [
-  "med-aziz-kaboudi"
- ],
- "lastMove": [
-  {
-   "r": 5,
-   "c": 3
+  "players": [],
+  "last": [],
+  "lastGame": null
+ },
+ "rps": {
+  "rounds": 0,
+  "throws": {
+   "rock": 0,
+   "paper": 0,
+   "scissors": 0
   },
-  {
-   "r": 5,
-   "c": 4
+  "results": {
+   "human": 0,
+   "bot": 0,
+   "draw": 0
+  },
+  "last": null
+ },
+ "players": {
+  "med-aziz-kaboudi": {
+   "played": 1,
+   "won": 0,
+   "lost": 0,
+   "draw": 0,
+   "first": "2026-10-11T13:03:33.662Z",
+   "last": "2026-10-11T13:03:33.662Z"
   }
- ],
- "recent": [
+ },
+ "totals": {
+  "moves": 1,
+  "games": 0,
+  "human": 0,
+  "bot": 0,
+  "draw": 0
+ },
+ "feed": [
   {
    "login": "med-aziz-kaboudi",
-   "col": 4,
+   "game": "connect4",
    "at": "2026-10-11T13:03:33.662Z"
   }
- ],
- "games": [],
- "wins": {},
- "lastGameBoard": null
+ ]
 }

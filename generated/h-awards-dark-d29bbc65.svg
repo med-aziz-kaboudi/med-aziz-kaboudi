@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="92" viewBox="0 0 1200 92" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.run{animation:run 4.5s cubic-bezier(.6,0,.4,1) infinite}
+@keyframes run{from{transform:translateX(0);opacity:0}10%{opacity:1}80%{opacity:1}to{transform:translateX(900px);opacity:0}}
+.in{animation:in .8s cubic-bezier(.16,1,.3,1) both}
+@keyframes in{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+
+</style>
+
+<defs>
+  <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#79c0ff"/><stop offset="1" stop-color="#2f81f7"/></linearGradient>
+  <linearGradient id="ray" x1="0" x2="1"><stop offset="0" stop-color="#79c0ff" stop-opacity="0"/><stop offset=".5" stop-color="#79c0ff"/><stop offset="1" stop-color="#79c0ff" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in">
+  <rect x="2" y="16" width="56" height="56" rx="16" fill="url(#tile)"/>
+  <rect x="2" y="16" width="56" height="56" rx="16" fill="none" stroke="#fff" stroke-opacity=".25"/>
+  <g transform="translate(15 29) scale(1.25)"><path d="M7 3h10v6a5 5 0 0 1-10 0z M7 5H4a3 3 0 0 0 3 4 M17 5h3a3 3 0 0 1-3 4 M12 14v4 M8 21h8 M9.5 18h5v3h-5z" fill="none" stroke="#ffffff" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="80" y="56" font-size="32" font-weight="800" letter-spacing="-.8" fill="#f0f4fa">Hackathons &amp; certifications</text>
+  
+</g>
+<rect x="80" y="86" width="1118" height="1" fill="#2a3240"/>
+<rect x="80" y="85" width="220" height="3" rx="1.5" fill="url(#ray)" class="run"/>
+
+</svg>
