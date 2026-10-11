@@ -49,18 +49,29 @@
     0
    ],
    [
+    1,
     0,
     0,
-    0,
-    0,
+    2,
     0,
     0,
     0
    ]
   ],
-  "moves": 0,
-  "players": [],
-  "lastMove": [],
+  "moves": 2,
+  "players": [
+   "med-aziz-kaboudi"
+  ],
+  "lastMove": [
+   {
+    "r": 5,
+    "c": 0
+   },
+   {
+    "r": 5,
+    "c": 3
+   }
+  ],
   "games": []
  },
  "ttt": {
@@ -94,13 +105,28 @@
   },
   "last": null
  },
- "players": {},
+ "players": {
+  "med-aziz-kaboudi": {
+   "played": 1,
+   "won": 0,
+   "lost": 0,
+   "draw": 0,
+   "first": "2026-10-11T13:48:17.434Z",
+   "last": "2026-10-11T13:48:17.434Z"
+  }
+ },
  "totals": {
-  "moves": 0,
+  "moves": 1,
   "games": 0,
   "human": 0,
   "bot": 0,
   "draw": 0
  },
- "feed": []
+ "feed": [
+  {
+   "login": "med-aziz-kaboudi",
+   "game": "connect4",
+   "at": "2026-10-11T13:48:17.434Z"
+  }
+ ]
 }
