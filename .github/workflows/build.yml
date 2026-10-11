@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: 22
@@ -32,18 +34,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Render images and README
-        run: node scripts/render.mjs
-
-      - name: Commit
+      - name: Render and commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A README.md generated data/stats.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Redraw profile"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
-          exit 1
+          cp data/stats.json /tmp/stats.json
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/stats.json data/stats.json
+            node scripts/render.mjs
+            git add -A README.md generated data/stats.json
+            git diff --cached --quiet && break
+            git commit -q -m "Redraw profile"
+            git push -q origin HEAD:main && break
+            sleep $((i * 3))
+          done
 
       - name: Snake from my own contribution graph
         uses: Platane/snk/svg-only@v3

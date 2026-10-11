@@ -19,32 +19,37 @@ jobs:
     if: startsWith(github.event.issue.title, 'c4|') || startsWith(github.event.issue.title, 'ttt|') || startsWith(github.event.issue.title, 'rps|') || startsWith(github.event.issue.title, 'connect4|')
     runs-on: ubuntu-latest
     steps:
+      # Issue events carry the commit that was current when the issue was
+      # opened, which is stale if another move landed since. Always start
+      # from the tip of main instead.
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - uses: actions/setup-node@v5
         with:
           node-version: 22
 
       # Issue fields arrive as env vars only, never inside the script text,
       # so a crafted title cannot run anything. play.mjs validates it again.
-      - name: Play the move
-        run: node scripts/play.mjs
+      # If someone else's move lands first and the push is rejected, throw
+      # the work away, take the new tip, and play the move again on it.
+      - name: Play, redraw and commit
         env:
           TITLE: ${{ github.event.issue.title }}
-          LOGIN: ${{ github.event.issue.user.login }}
-
-      - name: Redraw
-        run: node scripts/render.mjs
-
-      - name: Commit
-        env:
           LOGIN: ${{ github.event.issue.user.login }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A README.md generated game/state.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Arcade: move by @$LOGIN"
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            node scripts/play.mjs
+            node scripts/render.mjs
+            git add -A README.md generated game/state.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Arcade: move by @$LOGIN"
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 3))
+          done
           exit 1
 
       - name: Reply and close
