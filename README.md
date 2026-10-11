@@ -43,7 +43,7 @@ You play red against a bot that thinks five moves ahead. Pick a column below, pr
   <a href="https://github.com/med-aziz-kaboudi/med-aziz-kaboudi/issues/new?title=connect4%7Cdrop%7C7&body=Press%20**Create**%20to%20drop%20your%20disc%20into%20column%207.%0A%0AThe%20bot%20answers%20within%20a%20minute%20and%20the%20board%20on%20the%20profile%20updates%20by%20itself.%20You%20can%20close%20this%20tab."><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-dark-08735653.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-light-ce1658cd.svg"><img alt="Drop in column 7" src="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-dark-08735653.svg" width="64"></picture></a>
 </p>
 
-<p align="center"><sub><b>Latest moves:</b> [@med-aziz-kaboudi](https://github.com/med-aziz-kaboudi) → column 4</sub></p>
+<p align="center"><sub><b>Latest moves:</b> <a href="https://github.com/med-aziz-kaboudi">@med-aziz-kaboudi</a> → column 4</sub></p>
 
 <p align="center"><sub><b>Score so far:</b> humans 0 · bot 0</sub></p>
 

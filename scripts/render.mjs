@@ -116,7 +116,7 @@ md.push(`<p align="center">
 ${Array.from({ length: COLS }, (_, i) => `  <a href="${issue(i + 1)}">${pic(`col-${i + 1}`, `Drop in column ${i + 1}`, 64)}</a>`).join('\n')}
 </p>`)
 const recent = state.recent.length
-  ? state.recent.slice(0, 5).map((r) => `[@${r.login}](https://github.com/${r.login}) → column ${r.col}`).join(' · ')
+  ? state.recent.slice(0, 5).map((r) => `<a href="https://github.com/${r.login}">@${r.login}</a> → column ${r.col}`).join(' · ')
   : 'No moves yet. Be the first.'
 md.push(`<p align="center"><sub><b>Latest moves:</b> ${recent}</sub></p>`)
 md.push(`<p align="center"><sub><b>Score so far:</b> humans ${humanWins} · bot ${botWins}${winners.length ? ` · <b>Hall of fame:</b> ${winners.map(([l, n]) => `<a href="https://github.com/${l}">@${l}</a> (${n})`).join(', ')}` : ''}</sub></p>`)
