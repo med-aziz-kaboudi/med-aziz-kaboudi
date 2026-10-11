@@ -296,7 +296,7 @@ export function stack(t, rows, labels, theme) {
       if (ic && theme === 'light' && lum(ic.hex) > 0.75) color = '#3d4450'
       const path = ic ? ic.path : SPARK
       const k = n++
-      return `<g class="tile" style="animation-delay:${f(0.05 + k * 0.035)}s" transform="translate(${x} ${y})">
+      return `<g class="tile" style="animation-delay:${f(k * 0.018)}s" transform="translate(${x} ${y})">
   <rect width="${tile.w}" height="${tile.h}" rx="16" fill="${t.panel}" stroke="${t.border}"/>
   <g transform="translate(${tile.w / 2 - 14} 14) scale(${28 / 24})"><path d="${path}" fill="${color}"/></g>
   <text x="${tile.w / 2}" y="66" text-anchor="middle" font-size="12.5" fill="${t.muted}">${esc(labels[name] || name)}</text>
@@ -305,7 +305,7 @@ export function stack(t, rows, labels, theme) {
     return `<text x="0" y="${y + 46}" class="mono" font-size="12.5" letter-spacing="2" fill="${t.dim}">${esc(cat.toUpperCase())}</text>\n${tiles.join('\n')}`
   })
   const style = `
-.tile{animation:pop .7s cubic-bezier(.2,1.3,.4,1) both}
+.tile{animation:pop .5s ease-out both}
 @keyframes pop{from{opacity:0;transform-origin:center}to{opacity:1}}
 .sweep{animation:sweep 6s ease-in-out 1.5s infinite both}
 @keyframes sweep{from{transform:translateX(0)}55%,100%{transform:translateX(${W + 400}px)}}
