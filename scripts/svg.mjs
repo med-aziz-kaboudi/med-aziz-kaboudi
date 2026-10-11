@@ -272,57 +272,66 @@ ${roleCss}
 
 /* -------------------------------------------------------- section header */
 
-/** Section title with a custom icon and a light running along its rule. */
-export function header(t, icon, title, sub) {
-  const W = 1200, H = 92
+// A hairline rule with measurement ticks and a crosshair at each end, the
+// visual language of a technical drawing. Shared by headers and tiles.
+const ruler = (t, x, y, w, { major = 120, minor = 24 } = {}) => {
+  const ticks = []
+  for (let i = 0; i <= w; i += minor) ticks.push(`<line x1="${x + i}" y1="${y}" x2="${x + i}" y2="${y + (i % major === 0 ? 7 : 3.5)}"/>`)
+  return `<g stroke="${t.dim}" stroke-opacity=".55">${ticks.join('')}</g><line x1="${x}" y1="${y}" x2="${x + w}" y2="${y}" stroke="${t.border}"/>`
+}
+const cross = (t, x, y) =>
+  `<path d="M${x - 5} ${y}h10M${x} ${y - 5}v10" stroke="${t.accent2}" stroke-width="1.2"/>`
+
+/**
+ * Section title: an outlined index number, the title, a short note, and a
+ * measured rule underneath with a light travelling along it.
+ */
+export function header(t, index, title, note) {
+  const W = 1200, H = 104
   const style = `
-.run{animation:run 4.5s cubic-bezier(.6,0,.4,1) infinite}
-@keyframes run{from{transform:translateX(0);opacity:0}10%{opacity:1}80%{opacity:1}to{transform:translateX(${W - 300}px);opacity:0}}
+.run{animation:run 5s cubic-bezier(.6,0,.4,1) infinite}
+@keyframes run{from{transform:translateX(0);opacity:0}10%,80%{opacity:1}to{transform:translateX(${W - 160}px);opacity:0}}
 .in{animation:in .8s cubic-bezier(.16,1,.3,1) both}
-@keyframes in{from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:none}}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 `
   const body = `
-<defs>
-  <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${t.accent2}"/><stop offset="1" stop-color="${t.accent}"/></linearGradient>
-  <linearGradient id="ray" x1="0" x2="1"><stop offset="0" stop-color="${t.accent2}" stop-opacity="0"/><stop offset=".5" stop-color="${t.accent2}"/><stop offset="1" stop-color="${t.accent2}" stop-opacity="0"/></linearGradient>
-</defs>
+<defs><linearGradient id="ray" x1="0" x2="1"><stop offset="0" stop-color="${t.accent2}" stop-opacity="0"/><stop offset=".5" stop-color="${t.accent2}"/><stop offset="1" stop-color="${t.accent2}" stop-opacity="0"/></linearGradient></defs>
 <g class="in">
-  <rect x="2" y="16" width="56" height="56" rx="16" fill="url(#tile)"/>
-  <rect x="2" y="16" width="56" height="56" rx="16" fill="none" stroke="#fff" stroke-opacity=".25"/>
-  ${strokeIcon(ICON[icon], '#ffffff', 30, 15, 29, 2.2)}
-  <text x="80" y="${sub ? 46 : 56}" font-size="32" font-weight="800" letter-spacing="-.8" fill="${t.text}">${esc(title)}</text>
-  ${sub ? `<text x="81" y="70" class="mono" font-size="13" letter-spacing="1.6" fill="${t.muted}">${esc(sub)}</text>` : ''}
+  <text x="0" y="68" font-size="64" font-weight="900" letter-spacing="-2" fill="none" stroke="${t.accent2}" stroke-width="1.3">${esc(index)}</text>
+  <text x="96" y="52" font-size="34" font-weight="850" letter-spacing="-1" fill="${t.text}">${esc(title)}</text>
+  ${note ? `<text x="97" y="76" class="mono" font-size="12.5" letter-spacing="1.2" fill="${t.muted}">${esc(note)}</text>` : ''}
 </g>
-<rect x="80" y="86" width="${W - 82}" height="1" fill="${t.border}"/>
-<rect x="80" y="85" width="220" height="3" rx="1.5" fill="url(#ray)" class="run"/>
+${ruler(t, 0, 90, W - 1)}
+${cross(t, 5, 90)}${cross(t, W - 6, 90)}
+<rect x="0" y="89" width="160" height="2" fill="url(#ray)" class="run"/>
 `
   return wrap(W, H, body, style)
 }
 
 /* --------------------------------------------------------------- buttons */
 
-/** A link button: brand mark or line icon plus a label. */
+/** A link button: brand mark or line icon plus a label, square-shouldered. */
 export function button(t, { label, brand, icon, color, w }) {
   const W = w || Math.round(72 + label.length * 9.4), H = 50
   const c = color || t.accent2
   const mark = brand === 'LinkedIn'
-    ? `<rect x="18" y="13" width="24" height="24" rx="5" fill="${c}"/><text x="30" y="31" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">in</text>`
+    ? `<rect x="18" y="13" width="24" height="24" rx="4" fill="${c}"/><text x="30" y="31" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">in</text>`
     : brand
       ? brandIcon(brand, c, 22, 19, 14)
       : strokeIcon(ICON[icon], c, 22, 19, 14, 2)
-  const style = `
-.sh{animation:sh 5s ease-in-out 1s infinite}
-@keyframes sh{from{transform:translateX(-120px)}40%,100%{transform:translateX(${W + 40}px)}}
-`
   const body = `
-<defs><clipPath id="b"><rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="14"/></clipPath>
-<linearGradient id="s" x1="0" x2="1"><stop offset="0" stop-color="${c}" stop-opacity="0"/><stop offset=".5" stop-color="${c}" stop-opacity=".2"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="14" fill="${t.panel}" stroke="${t.border}"/>
-<g clip-path="url(#b)"><g class="sh"><rect x="0" y="0" width="90" height="${H}" fill="url(#s)" transform="skewX(-15)"/></g></g>
+<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="8" fill="${t.panel}" stroke="${t.border}"/>
+${brackets(t, 0, 0, W, H, 9, c)}
 ${mark}
-<text x="52" y="31" font-size="15" font-weight="700" letter-spacing=".2" fill="${t.text}">${esc(label)}</text>
+<text x="52" y="31" font-size="15" font-weight="700" fill="${t.text}">${esc(label)}</text>
 `
-  return wrap(W, H, body, style)
+  return wrap(W, H, body)
+}
+
+// L-shaped corner marks, like crop marks on a print.
+const brackets = (t, x, y, w, h, s, color) => {
+  const c = color || t.accent2
+  return `<path d="M${x + 1} ${y + s}V${y + 1}H${x + s} M${x + w - s} ${y + 1}H${x + w - 1}V${y + s} M${x + w - 1} ${y + h - s}V${y + h - 1}H${x + w - s} M${x + s} ${y + h - 1}H${x + 1}V${y + h - s}" fill="none" stroke="${c}" stroke-width="1.6"/>`
 }
 
 /* ------------------------------------------------------------- products */
@@ -379,37 +388,40 @@ export function productCard(t, p, root) {
 /* ---------------------------------------------------------------- tiles */
 
 /**
- * A row of number tiles. Numbers roll into place like an odometer, a line
- * icon sits in a lit badge, and a bar charges up underneath.
+ * A row of readouts. Each is a label, a big number that rolls into place like
+ * an odometer, and a measured scale underneath that charges up. Corner marks
+ * instead of a full card border.
+ *
+ * Every rolling column carries its final position as its resting transform,
+ * so with animations off (reduced motion) the number still reads correctly
+ * instead of showing the zero it starts from.
  */
-export function tiles(t, items, { H = 196 } = {}) {
-  const W = 1200, gap = 16
+export function tiles(t, items, { H = 172 } = {}) {
+  const W = 1200, gap = 18
   const tw = (W - gap * (items.length - 1)) / items.length
-  const fs = items.length > 4 ? 52 : 60, lh = fs * 1.2, adv = fs * 0.62
+  const fs = items.length > 4 ? 56 : 64, lh = fs * 1.2, adv = fs * 0.6
+  const base = 118
   const css = []
   let col = 0
   const out = items.map((it, i) => {
     const x = i * (tw + gap)
-    const chars = String(it.value).split('')
-    const glyphs = chars.map((ch, j) => {
-      const gx = 28 + j * adv
-      if (!/\d/.test(ch)) return `<text x="${f(gx)}" y="138" font-size="${fs}" font-weight="900" fill="${t.accent2}" class="late">${esc(ch)}</text>`
+    const glyphs = String(it.value).split('').map((ch, j) => {
+      const gx = 24 + j * adv
+      if (!/\d/.test(ch)) return `<text x="${f(gx)}" y="${base}" font-size="${fs}" font-weight="900" fill="${t.accent2}" class="late">${esc(ch)}</text>`
       const d = Number(ch)
       const seq = [...'0123456789', ...'0123456789'.slice(0, d + 1)]
+      const dist = f((seq.length - 1) * lh)
       const k = col++
-      css.push(`@keyframes o${k}{to{transform:translateY(-${f((seq.length - 1) * lh)}px)}}.o${k}{animation:o${k} ${f(2 + j * 0.3 + i * 0.12)}s cubic-bezier(.15,.85,.25,1) ${f(0.2 + i * 0.1)}s both}`)
-      return `<g class="o${k}">${seq.map((s, n) => `<text x="${f(gx)}" y="${f(138 + n * lh)}" font-size="${fs}" font-weight="900" fill="${t.text}">${s}</text>`).join('')}</g>`
+      css.push(`@keyframes o${k}{from{transform:translateY(0)}to{transform:translateY(-${dist}px)}}.o${k}{transform:translateY(-${dist}px);animation:o${k} ${f(2 + j * 0.3 + i * 0.12)}s cubic-bezier(.15,.85,.25,1) ${f(0.2 + i * 0.1)}s both}`)
+      return `<g class="o${k}">${seq.map((s, n) => `<text x="${f(gx)}" y="${f(base + n * lh)}" font-size="${fs}" font-weight="900" fill="${t.text}">${s}</text>`).join('')}</g>`
     })
     return `<g transform="translate(${f(x)} 0)">
-  <rect x=".5" y=".5" width="${f(tw - 1)}" height="${H - 1}" rx="20" fill="${t.panel}" stroke="${t.border}"/>
-  <rect x=".5" y=".5" width="${f(tw - 1)}" height="${H - 1}" rx="20" fill="url(#dots)"/>
-  <rect x=".5" y=".5" width="${f(tw - 1)}" height="${H - 1}" rx="20" fill="url(#corner)"/>
-  <rect x="24" y="22" width="40" height="40" rx="12" fill="${t.accent}" fill-opacity=".14" stroke="${t.accent}" stroke-opacity=".4"/>
-  ${strokeIcon(ICON[it.icon], t.accent2, 22, 33, 31, 2)}
+  <rect x="0" y="0" width="${f(tw)}" height="${H}" rx="4" fill="${t.panel}" fill-opacity=".55"/>
+  ${brackets(t, 0, 0, tw, H, 14)}
+  <text x="24" y="34" class="mono" font-size="11.5" letter-spacing="1.8" fill="${t.muted}">${esc(it.label)}</text>
   <g clip-path="url(#band)">${glyphs.join('')}</g>
-  <text x="28" y="${H - 34}" class="mono" font-size="11.5" letter-spacing="2" fill="${t.muted}">${esc(it.label)}</text>
-  <rect x="28" y="${H - 20}" width="${f(tw - 56)}" height="3" rx="1.5" fill="${t.border}"/>
-  <rect x="28" y="${H - 20}" width="${f(tw - 56)}" height="3" rx="1.5" fill="url(#bar)" class="charge" style="animation-delay:${f(0.4 + i * 0.15)}s"/>
+  ${ruler(t, 24, H - 32, f(tw - 48), { major: 60, minor: 12 })}
+  <rect x="24" y="${H - 33}" width="${f(tw - 48)}" height="2" fill="${t.accent2}" class="charge" style="animation-delay:${f(0.4 + i * 0.15)}s"/>
 </g>`
   })
   const style = `
@@ -420,12 +432,7 @@ text{font-variant-numeric:tabular-nums}
 .charge{animation:charge 2.2s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:left}
 @keyframes charge{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 `
-  const body = `<defs>
-<clipPath id="band"><rect x="0" y="${f(138 - fs * 1.05)}" width="${f(tw)}" height="${f(fs * 1.3)}"/></clipPath>
-<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="${t.text}" fill-opacity=".05"/></pattern>
-<radialGradient id="corner" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="${t.accent}" stop-opacity=".16"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient>
-<linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="${t.accent}"/><stop offset="1" stop-color="${t.accent2}"/></linearGradient>
-</defs>
+  const body = `<defs><clipPath id="band"><rect x="0" y="${f(base - fs * 1.02)}" width="${f(tw)}" height="${f(fs * 1.25)}"/></clipPath></defs>
 ${out.join('\n')}`
   return wrap(W, H, body, style)
 }
@@ -576,7 +583,7 @@ export function tttCell(t, v, { fresh = false, delay = 0 } = {}) {
 @keyframes breathe{0%,100%{opacity:.25}50%{opacity:.7}}
 `
   const mark = v === 1 ? X_MARK(s, t.accent2, fresh) : v === 2 ? O_MARK(s, YEL, fresh) : `<circle cx="${s / 2}" cy="${s / 2}" r="4" fill="${t.dim}" class="empty"/>`
-  const body = `<rect x="4" y="4" width="${s - 8}" height="${s - 8}" rx="18" fill="${t.panel}" stroke="${t.border}"/>${mark}`
+  const body = `<rect x="4" y="4" width="${s - 8}" height="${s - 8}" rx="6" fill="${t.panel}"/>${brackets(t, 4, 4, s - 8, s - 8, 12, t.dim)}${mark}`
   return wrap(s, s, body, style)
 }
 
@@ -601,9 +608,8 @@ export function rpsButton(t, throwName, i) {
 @keyframes hand{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(6deg) translateY(-4px)}}
 `
   const body = `
-<defs><radialGradient id="g" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="${t.accent}" stop-opacity=".2"/><stop offset="1" stop-color="${t.accent}" stop-opacity="0"/></radialGradient></defs>
-<rect x="4" y="4" width="${S - 8}" height="${S - 8}" rx="24" fill="${t.panel}" stroke="${t.border}"/>
-<rect x="4" y="4" width="${S - 8}" height="${S - 8}" rx="24" fill="url(#g)"/>
+<rect x="4" y="4" width="${S - 8}" height="${S - 8}" rx="6" fill="${t.panel}"/>
+${brackets(t, 4, 4, S - 8, S - 8, 16)}
 <g class="hand">${strokeIcon(ICON[throwName], t.accent2, 56, 47, 26, 1.8)}</g>
 <text x="${S / 2}" y="118" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="2" fill="${t.text}">${throwName.toUpperCase()}</text>
 `

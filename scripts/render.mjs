@@ -16,6 +16,7 @@ const st = existsSync(`${root}/data/stats.json`)
   ? JSON.parse(readFileSync(`${root}/data/stats.json`, 'utf8'))
   : { total: 0, weeks: [] }
 
+const showCity = st.total >= P.CITY_MIN_CONTRIBUTIONS
 const RAW = `https://raw.githubusercontent.com/${P.REPO}/main/generated`
 const files = {}
 
@@ -51,22 +52,22 @@ save('btn-linkedin', (t) => S.button(t, { label: 'LinkedIn', brand: 'LinkedIn', 
 save('btn-email', (t) => S.button(t, { label: 'Email', icon: 'mail', w: 130 }))
 save('stats', (t) => S.tiles(t, P.STATS))
 
-save('h-products', (t) => S.header(t, 'phone', 'My products', 'TWO APPS, BUILT AND RUN END TO END'))
+save('h-products', (t) => S.header(t, '01', 'My products', 'Two apps, built and run end to end. Click a card for its website.'))
 for (const p of P.PRODUCTS) {
   save(`product-${p.key}`, (t) => S.productCard(t, p, root))
   save(`ios-${p.key}`, (t) => S.button(t, { label: 'App Store', brand: 'AppStore', color: p.colors[0], w: 180 }))
   save(`android-${p.key}`, (t) => S.button(t, { label: 'Google Play', brand: 'GooglePlay', color: p.colors[0], w: 180 }))
 }
-save('h-stack', (t) => S.header(t, 'layers', 'Stack', 'WHAT I SHIP WITH'))
+save('h-stack', (t) => S.header(t, '02', 'Stack', 'What I ship with, every day.'))
 save('stack', (t) => S.stack(t, P.STACK, P.STACK_LABEL))
-save('h-awards', (t) => S.header(t, 'trophy', 'Hackathons & certifications'))
+save('h-awards', (t) => S.header(t, showCity ? '05' : '04', 'Hackathons & certifications', 'Placings and the paper behind them.'))
 save('awards', (t) => S.awards(t, P.HACKATHONS, P.CERTS))
 
 /* ------------------------------------------------------------- arcade */
 
 const tot = state.totals
 const playerCount = Object.keys(state.players).length
-save('h-arcade', (t) => S.header(t, 'gamepad', 'Arcade', 'THREE GAMES AGAINST MY BOTS. EVERY VISITOR PLAYS THE SAME BOARD.'))
+save('h-arcade', (t) => S.header(t, '03', 'Arcade', 'Three games against my bots. Every visitor plays the same board.'))
 save('scoreboard', (t) => S.tiles(t, [
   { value: String(playerCount), label: 'PLAYERS', icon: 'users' },
   { value: String(tot.games), label: 'GAMES FINISHED', icon: 'gamepad' },
@@ -106,9 +107,8 @@ function resultLine(g) {
 
 /* ---------------------------------------------------------- city gate */
 
-const showCity = st.total >= P.CITY_MIN_CONTRIBUTIONS
 if (showCity) {
-  save('h-city', (t) => S.header(t, 'city', 'My year in 3D', 'ONE TOWER PER DAY OF CONTRIBUTIONS'))
+  save('h-city', (t) => S.header(t, '04', 'My year in 3D', 'One tower per day of contributions.'))
   save('city', (t) => S.city(t, st.weeks, st.total))
 }
 

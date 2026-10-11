@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="50" viewBox="0 0 162 50" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+</style>
+
+<rect x=".5" y=".5" width="161" height="49" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+<path d="M1 9V1H9 M153 1H161V9 M161 41V49H153 M9 49H1V41" fill="none" stroke="#218bff" stroke-width="1.6"/>
+<g transform="translate(19 14) scale(0.92)"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z M2 12h20 M12 2a15 15 0 0 1 0 20 M12 2a15 15 0 0 0 0 20" fill="none" stroke="#218bff" stroke-width="2.18" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="52" y="31" font-size="15" font-weight="700" fill="#1f2328">Portfolio</text>
+
+</svg>
