@@ -9,15 +9,15 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Hel
 <rect x=".5" y=".5" width="599" height="149" rx="20" fill="#f6f8fa" stroke="#d0d7de"/>
 <g transform="translate(32 22)">
   <rect width="78" height="78" rx="18" fill="#218bff" fill-opacity=".12" stroke="#218bff" stroke-opacity=".45"/>
-  <g transform="translate(17 17) scale(1.83)"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M20 4 8.1 15.9 M14.5 14.5 20 20 M8.1 8.1 12 12" fill="none" stroke="#218bff" stroke-width="0.98" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g transform="translate(17 17) scale(1.83)"><path d="M6.5 8 11 4.5l6 1.5 3.5 6-2.5 7H8.5L3.5 15z M11 4.5 12.5 11l5.5 1 M12.5 11 8.5 19" fill="none" stroke="#218bff" stroke-width="0.98" stroke-linecap="round" stroke-linejoin="round"/></g>
   <text x="39" y="100" text-anchor="middle" class="mono" font-size="10.5" letter-spacing="1.5" fill="#59636e">VISITOR</text>
 </g><text x="129" y="68" text-anchor="middle" font-size="14" font-weight="800" fill="#818b98">VS</text><g transform="translate(148 22)">
   <rect width="78" height="78" rx="18" fill="#ffc93c" fill-opacity=".12" stroke="#ffc93c" stroke-opacity=".45"/>
   <g transform="translate(17 17) scale(1.83)"><path d="M6 2.5h8.5L19 7v13.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-17a1 1 0 0 1 1-1z M14 2.5V7.5h5 M8.5 12h7 M8.5 15.5h7 M8.5 19h4" fill="none" stroke="#ffc93c" stroke-width="0.98" stroke-linecap="round" stroke-linejoin="round"/></g>
   <text x="39" y="100" text-anchor="middle" class="mono" font-size="10.5" letter-spacing="1.5" fill="#59636e">MY BOT</text>
 </g>
-<text x="262" y="56" font-size="19" font-weight="800" fill="#1f2328">@med-aziz-kaboudi beat the bot</text>
-<text x="262" y="84" font-size="14" fill="#59636e">Humans 1 · Bot 1 · Draws 0</text>
-<text x="262" y="114" class="mono" font-size="11" letter-spacing="1" fill="#818b98">THE BOT LEARNS FROM EVERY THROW.</text>
+<text x="262" y="56" font-size="19" font-weight="800" fill="#1f2328">The bot beat @med-aziz-kaboudi</text>
+<text x="262" y="84" font-size="14" fill="#59636e">Humans 1 · Bot 2 · Draws 0</text>
+<text x="262" y="114" class="mono" font-size="11" letter-spacing="1" fill="#818b98">CROWD FAVOURITE: ROCK. THE BOT KNOWS.</text>
 
 </svg>

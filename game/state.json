@@ -97,43 +97,48 @@
   "lastGame": null
  },
  "rps": {
-  "rounds": 2,
+  "rounds": 3,
   "throws": {
-   "rock": 0,
+   "rock": 1,
    "paper": 1,
    "scissors": 1
   },
   "results": {
    "human": 1,
-   "bot": 1,
+   "bot": 2,
    "draw": 0
   },
   "last": {
    "login": "med-aziz-kaboudi",
-   "you": "scissors",
+   "you": "rock",
    "bot": "paper",
-   "result": "human",
-   "at": "2026-10-11T13:34:11.568Z"
+   "result": "bot",
+   "at": "2026-10-11T13:34:14.472Z"
   }
  },
  "players": {
   "med-aziz-kaboudi": {
-   "played": 5,
+   "played": 6,
    "won": 1,
-   "lost": 1,
+   "lost": 2,
    "draw": 0,
    "first": "2026-10-11T13:03:33.662Z",
-   "last": "2026-10-11T13:34:11.568Z"
+   "last": "2026-10-11T13:34:14.472Z"
   }
  },
  "totals": {
-  "moves": 5,
-  "games": 2,
+  "moves": 6,
+  "games": 3,
   "human": 1,
-  "bot": 1,
+  "bot": 2,
   "draw": 0
  },
  "feed": [
+  {
+   "login": "med-aziz-kaboudi",
+   "game": "rps",
+   "at": "2026-10-11T13:34:14.472Z"
+  },
   {
    "login": "med-aziz-kaboudi",
    "game": "rps",
