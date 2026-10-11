@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="50" viewBox="0 0 152 50" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+</style>
+
+<rect x=".5" y=".5" width="151" height="49" rx="8" fill="#151b24" stroke="#2a3240"/>
+<path d="M1 9V1H9 M143 1H151V9 M151 41V49H143 M9 49H1V41" fill="none" stroke="#0a66c2" stroke-width="1.6"/>
+<rect x="18" y="13" width="24" height="24" rx="4" fill="#0a66c2"/><text x="30" y="31" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">in</text>
+<text x="52" y="31" font-size="15" font-weight="700" fill="#f0f4fa">LinkedIn</text>
+
+</svg>

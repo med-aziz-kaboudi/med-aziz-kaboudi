@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150" role="img">
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+.hand{animation:hand 2.4s ease-in-out 0.5s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes hand{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(6deg) translateY(-4px)}}
+
+</style>
+
+<rect x="4" y="4" width="142" height="142" rx="6" fill="#151b24"/>
+<path d="M5 20V5H20 M130 5H145V20 M145 130V145H130 M20 145H5V130" fill="none" stroke="#79c0ff" stroke-width="1.6"/>
+<g class="hand"><g transform="translate(47 26) scale(2.33)"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M20 4 8.1 15.9 M14.5 14.5 20 20 M8.1 8.1 12 12" fill="none" stroke="#79c0ff" stroke-width="0.77" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<text x="75" y="118" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="2" fill="#f0f4fa">SCISSORS</text>
+
+</svg>
