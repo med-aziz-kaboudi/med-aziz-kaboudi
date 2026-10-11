@@ -57,5 +57,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NUMBER: ${{ github.event.issue.number }}
         run: |
+          gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label arcade || true
           gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file game/reply.md
           gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"
