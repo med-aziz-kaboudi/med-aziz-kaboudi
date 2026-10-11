@@ -31,7 +31,7 @@
 
 You play red against a bot that thinks five moves ahead. Pick a column below, press **Create** on the issue that opens, and within a minute a GitHub Action drops your disc, lets the bot answer and redraws this board. Everyone plays the same game.
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-dark.svg?v=72831fe6"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-light.svg?v=c4a3b1e2"><img alt="Current Connect Four board" src="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-dark.svg?v=72831fe6" width="520"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-dark.svg?v=56cfa37f"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-light.svg?v=8cfd66ed"><img alt="Current Connect Four board" src="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/connect4-dark.svg?v=56cfa37f" width="520"></picture></p>
 
 <p align="center">
   <a href="https://github.com/med-aziz-kaboudi/med-aziz-kaboudi/issues/new?title=connect4%7Cdrop%7C1&body=Press%20**Create**%20to%20drop%20your%20disc%20into%20column%201.%0A%0AThe%20bot%20answers%20within%20a%20minute%20and%20the%20board%20on%20the%20profile%20updates%20by%20itself.%20You%20can%20close%20this%20tab."><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-1-dark.svg?v=5a9ea5e9"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-1-light.svg?v=8b11e863"><img alt="Drop in column 1" src="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-1-dark.svg?v=5a9ea5e9" width="64"></picture></a>
@@ -43,7 +43,7 @@ You play red against a bot that thinks five moves ahead. Pick a column below, pr
   <a href="https://github.com/med-aziz-kaboudi/med-aziz-kaboudi/issues/new?title=connect4%7Cdrop%7C7&body=Press%20**Create**%20to%20drop%20your%20disc%20into%20column%207.%0A%0AThe%20bot%20answers%20within%20a%20minute%20and%20the%20board%20on%20the%20profile%20updates%20by%20itself.%20You%20can%20close%20this%20tab."><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-dark.svg?v=08735653"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-light.svg?v=ce1658cd"><img alt="Drop in column 7" src="https://raw.githubusercontent.com/med-aziz-kaboudi/med-aziz-kaboudi/main/generated/col-7-dark.svg?v=08735653" width="64"></picture></a>
 </p>
 
-<p align="center"><sub><b>Latest moves:</b> No moves yet. Be the first.</sub></p>
+<p align="center"><sub><b>Latest moves:</b> [@med-aziz-kaboudi](https://github.com/med-aziz-kaboudi) → column 4</sub></p>
 
 <p align="center"><sub><b>Score so far:</b> humans 0 · bot 0</sub></p>
 
