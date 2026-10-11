@@ -53,3 +53,10 @@ export function botMove(board, rand = Math.random) {
 }
 
 export const isFull = (b) => b.every(Boolean)
+
+/**
+ * True once neither side can still make three in a row: every line already
+ * holds both an X and an O. The game is a draw from that moment, so it ends
+ * there instead of making visitors fill the last squares for nothing.
+ */
+export const isDead = (b) => LINES.every((l) => l.some((i) => b[i] === 1) && l.some((i) => b[i] === 2))

@@ -103,14 +103,14 @@ function tictactoe(cell) {
 
   let w = TTT.winner(g.board)
   if (w) return endTTT('human', w, '**Three in a row. You beat the bot.**')
-  if (TTT.isFull(g.board)) return endTTT('draw', null, 'Board full. A draw.')
+  if (TTT.isDead(g.board)) return endTTT('draw', null, '**It is a draw.** Nobody can make three in a row any more, so the board has been cleared for a new game.')
 
   const b = TTT.botMove(g.board)
   g.board[b] = 2
   g.last.push(b)
   w = TTT.winner(g.board)
   if (w) return endTTT('bot', w, '**The bot got three in a row.** New board is up.')
-  if (TTT.isFull(g.board)) return endTTT('draw', null, 'Board full. A draw.')
+  if (TTT.isDead(g.board)) return endTTT('draw', null, '**It is a draw.** Nobody can make three in a row any more, so the board has been cleared for a new game.')
   reply.push('You played your X. The bot placed its O. Your turn again, or anyone else\'s.', '', '{{IMG:ttt-board}}')
   return true
 }
