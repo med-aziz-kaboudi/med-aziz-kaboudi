@@ -77,7 +77,7 @@
  "ttt": {
   "game": 1,
   "board": [
-   0,
+   1,
    0,
    0,
    0,
@@ -85,14 +85,14 @@
    0,
    2,
    0,
-   0
+   2
   ],
   "players": [
    "med-aziz-kaboudi"
   ],
   "last": [
-   4,
-   6
+   0,
+   8
   ],
   "lastGame": null
  },
@@ -118,22 +118,27 @@
  },
  "players": {
   "med-aziz-kaboudi": {
-   "played": 8,
+   "played": 9,
    "won": 1,
    "lost": 3,
    "draw": 0,
    "first": "2026-10-11T13:03:33.662Z",
-   "last": "2026-10-11T13:34:22.603Z"
+   "last": "2026-10-11T13:34:33.784Z"
   }
  },
  "totals": {
-  "moves": 8,
+  "moves": 9,
   "games": 4,
   "human": 1,
   "bot": 3,
   "draw": 0
  },
  "feed": [
+  {
+   "login": "med-aziz-kaboudi",
+   "game": "ttt",
+   "at": "2026-10-11T13:34:33.784Z"
+  },
   {
    "login": "med-aziz-kaboudi",
    "game": "rps",
@@ -168,11 +173,6 @@
    "login": "med-aziz-kaboudi",
    "game": "ttt",
    "at": "2026-10-11T13:29:11.775Z"
-  },
-  {
-   "login": "med-aziz-kaboudi",
-   "game": "connect4",
-   "at": "2026-10-11T13:03:33.662Z"
   }
  ]
 }

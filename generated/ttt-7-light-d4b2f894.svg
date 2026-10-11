@@ -10,5 +10,5 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Hel
 @keyframes breathe{0%,100%{opacity:.25}50%{opacity:.7}}
 
 </style>
-<rect x="4" y="4" width="96" height="96" rx="18" fill="#f6f8fa" stroke="#d0d7de"/><circle cx="52" cy="52" r="4" fill="#818b98" class="empty"/>
+<rect x="4" y="4" width="96" height="96" rx="18" fill="#f6f8fa" stroke="#d0d7de"/><circle cx="52" cy="52" r="22.88" stroke="#ffc93c" stroke-width="9.36" fill="none"/>
 </svg>
